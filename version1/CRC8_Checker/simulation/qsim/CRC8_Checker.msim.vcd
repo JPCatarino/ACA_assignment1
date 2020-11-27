@@ -1,0 +1,132 @@
+$comment
+	File created using the following command:
+		vcd file CRC8_Checker.msim.vcd -direction
+$end
+$date
+	Fri Nov 27 18:38:17 2020
+$end
+$version
+	ModelSim Version 10.4b
+$end
+$timescale
+	1ps
+$end
+
+$scope module CRC8_Checker_vlg_vec_tst $end
+$var reg 24 ! dIn [23:0] $end
+$var wire 1 " dOut $end
+
+$scope module i1 $end
+$var wire 1 # gnd $end
+$var wire 1 $ vcc $end
+$var wire 1 % unknown $end
+$var tri1 1 & devclrn $end
+$var tri1 1 ' devpor $end
+$var tri1 1 ( devoe $end
+$var wire 1 ) dOut~output_o $end
+$var wire 1 * dIn[7]~input_o $end
+$var wire 1 + dIn[5]~input_o $end
+$var wire 1 , dIn[20]~input_o $end
+$var wire 1 - dIn[12]~input_o $end
+$var wire 1 . dIn[8]~input_o $end
+$var wire 1 / dIn[13]~input_o $end
+$var wire 1 0 remainder[5]~9_combout $end
+$var wire 1 1 remainder[5]~10_combout $end
+$var wire 1 2 dIn[22]~input_o $end
+$var wire 1 3 dIn[18]~input_o $end
+$var wire 1 4 dIn[19]~input_o $end
+$var wire 1 5 remainder[7]~5_combout $end
+$var wire 1 6 dIn[14]~input_o $end
+$var wire 1 7 dIn[10]~input_o $end
+$var wire 1 8 dIn[16]~input_o $end
+$var wire 1 9 dIn[15]~input_o $end
+$var wire 1 : remainder[0]~0_combout $end
+$var wire 1 ; dIn[17]~input_o $end
+$var wire 1 < remainder[7]~8_combout $end
+$var wire 1 = dOut~0_combout $end
+$var wire 1 > dIn[11]~input_o $end
+$var wire 1 ? dIn[23]~input_o $end
+$var wire 1 @ dIn[2]~input_o $end
+$var wire 1 A remainder[2]~6_combout $end
+$var wire 1 B dIn[9]~input_o $end
+$var wire 1 C remainder[2]~4_combout $end
+$var wire 1 D remainder[2]~7_combout $end
+$var wire 1 E dIn[3]~input_o $end
+$var wire 1 F dIn[21]~input_o $end
+$var wire 1 G remainder[3]~16_combout $end
+$var wire 1 H dIn[1]~input_o $end
+$var wire 1 I remainder[1]~12_combout $end
+$var wire 1 J remainder[1]~11_combout $end
+$var wire 1 K remainder[1]~13_combout $end
+$var wire 1 L remainder[0]~1_combout $end
+$var wire 1 M dIn[6]~input_o $end
+$var wire 1 N remainder[6]~14_combout $end
+$var wire 1 O dIn[4]~input_o $end
+$var wire 1 P remainder[4]~15_combout $end
+$var wire 1 Q dOut~1_combout $end
+$var wire 1 R dOut~2_combout $end
+$var wire 1 S dIn[0]~input_o $end
+$var wire 1 T remainder[0]~2_combout $end
+$var wire 1 U remainder[0]~3_combout $end
+$var wire 1 V dOut~3_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101010101010101010101101 !
+0"
+0#
+1$
+x%
+1&
+1'
+1(
+0)
+1*
+1+
+0,
+0-
+0.
+1/
+10
+01
+02
+03
+14
+15
+06
+07
+08
+19
+1:
+1;
+0<
+0=
+1>
+1?
+1@
+1A
+1B
+0C
+0D
+1E
+1F
+0G
+0H
+0I
+0J
+0K
+1L
+0M
+0N
+0O
+1P
+0Q
+0R
+1S
+0T
+1U
+1V
+$end
+#1000000
