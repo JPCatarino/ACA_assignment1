@@ -1,0 +1,200 @@
+$comment
+	File created using the following command:
+		vcd file CRC8_Encoder.msim.vcd -direction
+$end
+$date
+	Tue Dec 01 16:37:14 2020
+$end
+$version
+	ModelSim Version 10.4b
+$end
+$timescale
+	1ps
+$end
+
+$scope module CRC8_Encoder_vlg_vec_tst $end
+$var reg 16 ! dIn [15:0] $end
+$var wire 1 " dOut [23] $end
+$var wire 1 # dOut [22] $end
+$var wire 1 $ dOut [21] $end
+$var wire 1 % dOut [20] $end
+$var wire 1 & dOut [19] $end
+$var wire 1 ' dOut [18] $end
+$var wire 1 ( dOut [17] $end
+$var wire 1 ) dOut [16] $end
+$var wire 1 * dOut [15] $end
+$var wire 1 + dOut [14] $end
+$var wire 1 , dOut [13] $end
+$var wire 1 - dOut [12] $end
+$var wire 1 . dOut [11] $end
+$var wire 1 / dOut [10] $end
+$var wire 1 0 dOut [9] $end
+$var wire 1 1 dOut [8] $end
+$var wire 1 2 dOut [7] $end
+$var wire 1 3 dOut [6] $end
+$var wire 1 4 dOut [5] $end
+$var wire 1 5 dOut [4] $end
+$var wire 1 6 dOut [3] $end
+$var wire 1 7 dOut [2] $end
+$var wire 1 8 dOut [1] $end
+$var wire 1 9 dOut [0] $end
+
+$scope module i1 $end
+$var wire 1 : gnd $end
+$var wire 1 ; vcc $end
+$var wire 1 < unknown $end
+$var tri1 1 = devclrn $end
+$var tri1 1 > devpor $end
+$var tri1 1 ? devoe $end
+$var wire 1 @ dOut[0]~output_o $end
+$var wire 1 A dOut[1]~output_o $end
+$var wire 1 B dOut[2]~output_o $end
+$var wire 1 C dOut[3]~output_o $end
+$var wire 1 D dOut[4]~output_o $end
+$var wire 1 E dOut[5]~output_o $end
+$var wire 1 F dOut[6]~output_o $end
+$var wire 1 G dOut[7]~output_o $end
+$var wire 1 H dOut[8]~output_o $end
+$var wire 1 I dOut[9]~output_o $end
+$var wire 1 J dOut[10]~output_o $end
+$var wire 1 K dOut[11]~output_o $end
+$var wire 1 L dOut[12]~output_o $end
+$var wire 1 M dOut[13]~output_o $end
+$var wire 1 N dOut[14]~output_o $end
+$var wire 1 O dOut[15]~output_o $end
+$var wire 1 P dOut[16]~output_o $end
+$var wire 1 Q dOut[17]~output_o $end
+$var wire 1 R dOut[18]~output_o $end
+$var wire 1 S dOut[19]~output_o $end
+$var wire 1 T dOut[20]~output_o $end
+$var wire 1 U dOut[21]~output_o $end
+$var wire 1 V dOut[22]~output_o $end
+$var wire 1 W dOut[23]~output_o $end
+$var wire 1 X dIn[3]~input_o $end
+$var wire 1 Y dIn[5]~input_o $end
+$var wire 1 Z porta4~combout $end
+$var wire 1 [ dIn[0]~input_o $end
+$var wire 1 \ dIn[11]~input_o $end
+$var wire 1 ] dIn[15]~input_o $end
+$var wire 1 ^ dIn[12]~input_o $end
+$var wire 1 _ porta57~0_combout $end
+$var wire 1 ` dIn[7]~input_o $end
+$var wire 1 a dIn[8]~input_o $end
+$var wire 1 b dIn[9]~input_o $end
+$var wire 1 c dIn[10]~input_o $end
+$var wire 1 d porta1a10~combout $end
+$var wire 1 e remainder~6_combout $end
+$var wire 1 f dIn[4]~input_o $end
+$var wire 1 g dIn[13]~input_o $end
+$var wire 1 h dIn[1]~input_o $end
+$var wire 1 i porta8~combout $end
+$var wire 1 j dIn[6]~input_o $end
+$var wire 1 k porta248~combout $end
+$var wire 1 l remainder~7_combout $end
+$var wire 1 m dIn[14]~input_o $end
+$var wire 1 n porta69~0_combout $end
+$var wire 1 o dIn[2]~input_o $end
+$var wire 1 p remainder~8_combout $end
+$var wire 1 q remainder~9_combout $end
+$var wire 1 r porta13~combout $end
+$var wire 1 s remainder~12_combout $end
+$var wire 1 t remainder~13_combout $end
+$var wire 1 u porta132~combout $end
+$var wire 1 v remainder~10_combout $end
+$var wire 1 w remainder~14_combout $end
+$var wire 1 x remainder~11_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1010101010101010 !
+09
+08
+17
+16
+05
+14
+03
+12
+01
+10
+0/
+1.
+0-
+1,
+0+
+1*
+0)
+1(
+0'
+1&
+0%
+1$
+0#
+1"
+0:
+1;
+x<
+1=
+1>
+1?
+0@
+0A
+1B
+1C
+0D
+1E
+0F
+1G
+0H
+1I
+0J
+1K
+0L
+1M
+0N
+1O
+0P
+1Q
+0R
+1S
+0T
+1U
+0V
+1W
+1X
+1Y
+0Z
+0[
+1\
+1]
+0^
+0_
+1`
+0a
+1b
+0c
+1d
+0e
+0f
+1g
+1h
+0i
+0j
+1k
+0l
+0m
+0n
+0o
+1p
+1q
+1r
+1s
+0t
+0u
+1v
+0w
+1x
+$end
+#1000000

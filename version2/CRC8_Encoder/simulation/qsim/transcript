@@ -1,0 +1,30 @@
+# do CRC8_Encoder.do
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 16:37:13 on Dec 01,2020
+# vlog -work work CRC8_Encoder.vo 
+# -- Compiling module CRC8_Encoder
+# 
+# Top level modules:
+# 	CRC8_Encoder
+# End time: 16:37:13 on Dec 01,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 16:37:13 on Dec 01,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module CRC8_Encoder_vlg_vec_tst
+# 
+# Top level modules:
+# 	CRC8_Encoder_vlg_vec_tst
+# End time: 16:37:13 on Dec 01,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.CRC8_Encoder_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 16:37:14 on Dec 01,2020
+# Loading work.CRC8_Encoder_vlg_vec_tst
+# Loading work.CRC8_Encoder
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# ** Note: $finish    : Waveform.vwf.vt(45)
+#    Time: 1 us  Iteration: 0  Instance: /CRC8_Encoder_vlg_vec_tst
+# End time: 16:37:14 on Dec 01,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
