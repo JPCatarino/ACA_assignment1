@@ -4,8 +4,8 @@ USE ieee.std_logic_unsigned.all;
 
 entity BinCounter5 is
 	port(
-		clk, rst : std_logic;
-		cOut		: std_logic_vector(4 downto 0);
+		clk, rst : in  std_logic;
+		cOut		: out std_logic_vector(4 downto 0)
 	);
 end BinCounter5;
 
@@ -14,7 +14,7 @@ architecture Behavioural of BinCounter5 is
 begin
 	process(clk, rst)
 	begin 
-		if (rst='1') then
+		if (rst='0') then
 			s_cOut <= "00000";
 		elsif(clk = '1' and clk'EVENT) then
 			s_cOut <= s_cOut + 1;
