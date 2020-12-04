@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition"
 
--- DATE "12/01/2020 16:34:41"
+-- DATE "12/04/2020 17:30:53"
 
 -- 
 -- Device: Altera EP4CGX15BF14C6 Package FBGA169
@@ -35,7 +35,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	CRC8_Encoder IS
     PORT (
 	dIn : IN std_logic_vector(15 DOWNTO 0);
-	dOut : BUFFER std_logic_vector(23 DOWNTO 0)
+	dOut : OUT std_logic_vector(23 DOWNTO 0)
 	);
 END CRC8_Encoder;
 

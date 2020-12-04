@@ -3,7 +3,7 @@ $comment
 		vcd file CRC8_Encoder.msim.vcd -direction
 $end
 $date
-	Tue Dec 01 16:37:14 2020
+	Fri Dec 04 17:49:07 2020
 $end
 $version
 	ModelSim Version 10.4b

@@ -1,5 +1,6 @@
 vendor_name = ModelSim
 source_file = 1, C:/Users/Media Markt/Desktop/ACA_assignment1/version2/CRC8_Encoder/CRC8_Encoder.vhd
+source_file = 1, C:/Users/Media Markt/Desktop/ACA_assignment1/version2/CRC8_Encoder/Waveform.vwf
 source_file = 1, c:/altera_lite/15.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera_lite/15.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera_lite/15.1/quartus/libraries/vhdl/ieee/timing_b.vhd
