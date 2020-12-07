@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "12/01/2020 18:00:10"
+-- Generated on "12/07/2020 18:42:39"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          CRC8_Checker
 -- 
@@ -36,14 +36,12 @@ ARCHITECTURE CRC8_Checker_arch OF CRC8_Checker_vhd_vec_tst IS
 -- signals                                                   
 SIGNAL clk : STD_LOGIC;
 SIGNAL dIn : STD_LOGIC;
-SIGNAL dOut : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL error : STD_LOGIC;
 SIGNAL nGRst : STD_LOGIC;
 COMPONENT CRC8_Checker
 	PORT (
 	clk : IN STD_LOGIC;
 	dIn : IN STD_LOGIC;
-	dOut : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 	error : OUT STD_LOGIC;
 	nGRst : IN STD_LOGIC
 	);
@@ -54,15 +52,23 @@ BEGIN
 -- list connections between master ports and signals
 	clk => clk,
 	dIn => dIn,
-	dOut => dOut,
 	error => error,
 	nGRst => nGRst
 	);
 
+-- nGRst
+t_prcs_nGRst: PROCESS
+BEGIN
+	nGRst <= '0';
+	WAIT FOR 50000 ps;
+	nGRst <= '1';
+WAIT;
+END PROCESS t_prcs_nGRst;
+
 -- clk
 t_prcs_clk: PROCESS
 BEGIN
-	FOR i IN 1 TO 26
+	FOR i IN 1 TO 25
 	LOOP
 		clk <= '0';
 		WAIT FOR 19230 ps;
@@ -70,6 +76,19 @@ BEGIN
 		WAIT FOR 19230 ps;
 	END LOOP;
 	clk <= '0';
+	WAIT FOR 19230 ps;
+	clk <= '1';
+	WAIT FOR 18270 ps;
+	FOR i IN 1 TO 25
+	LOOP
+		clk <= '0';
+		WAIT FOR 19281 ps;
+		clk <= '1';
+		WAIT FOR 19280 ps;
+	END LOOP;
+	clk <= '0';
+	WAIT FOR 19281 ps;
+	clk <= '1';
 WAIT;
 END PROCESS t_prcs_clk;
 
@@ -125,15 +144,30 @@ BEGIN
 	dIn <= '1';
 	WAIT FOR 20000 ps;
 	dIn <= '0';
+	WAIT FOR 700000 ps;
+	dIn <= '1';
+	WAIT FOR 40000 ps;
+	dIn <= '0';
+	WAIT FOR 90000 ps;
+	dIn <= '1';
+	WAIT FOR 10000 ps;
+	dIn <= '0';
+	WAIT FOR 60000 ps;
+	dIn <= '1';
+	WAIT FOR 20000 ps;
+	dIn <= '0';
+	WAIT FOR 20000 ps;
+	dIn <= '1';
+	WAIT FOR 20000 ps;
+	dIn <= '0';
+	WAIT FOR 20000 ps;
+	dIn <= '1';
+	WAIT FOR 20000 ps;
+	dIn <= '0';
+	WAIT FOR 20000 ps;
+	dIn <= '1';
+	WAIT FOR 20000 ps;
+	dIn <= '0';
 WAIT;
 END PROCESS t_prcs_dIn;
-
--- nGRst
-t_prcs_nGRst: PROCESS
-BEGIN
-	nGRst <= '0';
-	WAIT FOR 50000 ps;
-	nGRst <= '1';
-WAIT;
-END PROCESS t_prcs_nGRst;
 END CRC8_Checker_arch;

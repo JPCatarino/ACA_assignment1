@@ -12,7 +12,7 @@ ARCHITECTURE behavior OF contMem IS
 BEGIN
   PROCESS (add)
     TYPE CMem IS ARRAY(0 TO 31) OF STD_LOGIC_VECTOR (2 DOWNTO 0);
-    VARIABLE prog: CMem := (CONV_STD_LOGIC_VECTOR (16#5#, 3),  -- nRst = 1   nSetO = 1   nEnClk = 1   00
+    VARIABLE prog: CMem := (CONV_STD_LOGIC_VECTOR (16#7#, 3),  -- nRst = 1   nSetO = 1   nEnClk = 1   00
                             CONV_STD_LOGIC_VECTOR (16#5#, 3),  -- nRst = 1   nSetO = 0   nEnClk = 1   01
                             CONV_STD_LOGIC_VECTOR (16#7#, 3),  -- nRst = 1   nSetO = 1   nEnClk = 1   02
                             CONV_STD_LOGIC_VECTOR (16#7#, 3),  -- nRst = 1   nSetO = 1   nEnClk = 1   03

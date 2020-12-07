@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/jorpc/projectos/ACA_assignment1/version2/CRC8_Checker/simulation/qsim
 Ecrc8_checker
-Z1 w1606845611
+Z1 w1607366560
 Z2 DPx9 cycloneiv 19 cycloneiv_atom_pack 0 22 ^M[R>L941CzW^5^z4gfb52
 Z3 DPx9 cycloneiv 20 cycloneiv_components 0 22 A=5Z=j^V:4BYGPNKNFE9o0
 Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
@@ -19,19 +19,19 @@ Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z9 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
-!i122 24
+!i122 58
 R0
 Z10 8CRC8_Checker.vho
 Z11 FCRC8_Checker.vho
 l0
-L80 1
-VU`VF]nl8MDO`SK=TdOzOd3
-!s100 c^<43TWBP3dk@B1cI>Dd60
+L37 1
+V`OJ;aDRXUTUjFi`NP`IE13
+!s100 T=U@kIND:E:_CRfZO_AIk2
 Z12 OV;C;2020.1;71
 32
-Z13 !s110 1606845612
+Z13 !s110 1607366561
 !i10b 1
-Z14 !s108 1606845612.000000
+Z14 !s108 1607366561.000000
 Z15 !s90 -work|work|CRC8_Checker.vho|
 Z16 !s107 CRC8_Checker.vho|
 !i113 1
@@ -46,12 +46,12 @@ R6
 R7
 R8
 R9
-DEx4 work 12 crc8_checker 0 22 U`VF]nl8MDO`SK=TdOzOd3
-!i122 24
-l179
-L105 813
-VEIA?7DTUXn[hdC@;b5a3b0
-!s100 ]TL?@3C<71KVHb]cQ:RgD0
+DEx4 work 12 crc8_checker 0 22 `OJ;aDRXUTUjFi`NP`IE13
+!i122 58
+l99
+L46 582
+V6;G?6J=M;U?k5_CiFjM3]2
+!s100 SS<>X_GM;`J31TdLh0>U]3
 R12
 32
 R13
@@ -63,10 +63,10 @@ R16
 R17
 R18
 Ecrc8_checker_vhd_vec_tst
-Z19 w1606845610
+Z19 w1607366559
 R7
 R8
-!i122 25
+!i122 59
 R0
 Z20 8Waveform.vwf.vht
 Z21 FWaveform.vwf.vht
@@ -88,11 +88,11 @@ Acrc8_checker_arch
 R7
 R8
 Z24 DEx4 work 24 crc8_checker_vhd_vec_tst 0 22 Z^Hn96bWCgkF6F71QlGSY3
-!i122 25
-l51
-Z25 L34 106
-VIEF59US2ETQFfR<mA;GO=2
-!s100 `mTf?RIh0ULjK07[XCMPe1
+!i122 59
+l49
+Z25 L34 140
+Vj=iZ_bSQO>KIe>ajhFl[_0
+!s100 AdSl]zkg097S_=4kX<6EO2
 R12
 32
 R13
@@ -104,14 +104,14 @@ R23
 R17
 R18
 Ehard_block
-R1
+Z26 w1607148227
 R4
 R2
 R6
 R7
 R8
 R3
-!i122 24
+!i122 50
 R0
 R10
 R11
@@ -121,9 +121,9 @@ V5mcF]JUg7TS^l0EMa_h4A1
 !s100 Q?IbEnM>aW3cc=hi`GCc71
 R12
 32
-R13
+Z27 !s110 1607148228
 !i10b 1
-R14
+Z28 !s108 1607148228.000000
 R15
 R16
 !i113 1
@@ -137,16 +137,16 @@ R7
 R8
 R3
 DEx4 work 10 hard_block 0 22 5mcF]JUg7TS^l0EMa_h4A1
-!i122 24
+!i122 50
 l65
 L51 20
 VMkbPfL8S?h^i>Mg3GSGD`1
 !s100 O>:lWQfHCcIaXgQ<=Tgn10
 R12
 32
-R13
+R27
 !i10b 1
-R14
+R28
 R15
 R16
 !i113 1
