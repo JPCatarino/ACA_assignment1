@@ -3,7 +3,7 @@ $comment
 		vcd file CRC8_Encoder.msim.vcd -direction
 $end
 $date
-	Fri Dec 04 17:49:07 2020
+	Tue Dec 08 16:31:05 2020
 $end
 $version
 	ModelSim Version 10.4b
@@ -70,61 +70,61 @@ $var wire 1 T dOut[20]~output_o $end
 $var wire 1 U dOut[21]~output_o $end
 $var wire 1 V dOut[22]~output_o $end
 $var wire 1 W dOut[23]~output_o $end
-$var wire 1 X dIn[3]~input_o $end
-$var wire 1 Y dIn[5]~input_o $end
-$var wire 1 Z porta4~combout $end
-$var wire 1 [ dIn[0]~input_o $end
-$var wire 1 \ dIn[11]~input_o $end
-$var wire 1 ] dIn[15]~input_o $end
-$var wire 1 ^ dIn[12]~input_o $end
-$var wire 1 _ porta57~0_combout $end
-$var wire 1 ` dIn[7]~input_o $end
-$var wire 1 a dIn[8]~input_o $end
-$var wire 1 b dIn[9]~input_o $end
-$var wire 1 c dIn[10]~input_o $end
-$var wire 1 d porta1a10~combout $end
-$var wire 1 e remainder~6_combout $end
-$var wire 1 f dIn[4]~input_o $end
+$var wire 1 X dIn[10]~input_o $end
+$var wire 1 Y dIn[9]~input_o $end
+$var wire 1 Z dIn[8]~input_o $end
+$var wire 1 [ xorPorta1a10|y~combout $end
+$var wire 1 \ dIn[3]~input_o $end
+$var wire 1 ] dIn[5]~input_o $end
+$var wire 1 ^ xorPorta4|y~combout $end
+$var wire 1 _ dIn[7]~input_o $end
+$var wire 1 ` dIn[12]~input_o $end
+$var wire 1 a dIn[11]~input_o $end
+$var wire 1 b dIn[15]~input_o $end
+$var wire 1 c dIn[0]~input_o $end
+$var wire 1 d xorPorta57|y~0_combout $end
+$var wire 1 e xorRemainder0|y~0_combout $end
+$var wire 1 f dIn[1]~input_o $end
 $var wire 1 g dIn[13]~input_o $end
-$var wire 1 h dIn[1]~input_o $end
-$var wire 1 i porta8~combout $end
-$var wire 1 j dIn[6]~input_o $end
-$var wire 1 k porta248~combout $end
-$var wire 1 l remainder~7_combout $end
-$var wire 1 m dIn[14]~input_o $end
-$var wire 1 n porta69~0_combout $end
-$var wire 1 o dIn[2]~input_o $end
-$var wire 1 p remainder~8_combout $end
-$var wire 1 q remainder~9_combout $end
-$var wire 1 r porta13~combout $end
-$var wire 1 s remainder~12_combout $end
-$var wire 1 t remainder~13_combout $end
-$var wire 1 u porta132~combout $end
-$var wire 1 v remainder~10_combout $end
-$var wire 1 w remainder~14_combout $end
-$var wire 1 x remainder~11_combout $end
+$var wire 1 h xorPorta8|y~combout $end
+$var wire 1 i dIn[6]~input_o $end
+$var wire 1 j xorPorta248|y~combout $end
+$var wire 1 k dIn[4]~input_o $end
+$var wire 1 l xorRemainder1|y~combout $end
+$var wire 1 m dIn[2]~input_o $end
+$var wire 1 n xorRemainder2|y~0_combout $end
+$var wire 1 o dIn[14]~input_o $end
+$var wire 1 p xorPorta69|y~0_combout $end
+$var wire 1 q xorRemainder2|y~1_combout $end
+$var wire 1 r xorPorta13|y~combout $end
+$var wire 1 s xorRemainder3|y~combout $end
+$var wire 1 t xorRemainder4|y~combout $end
+$var wire 1 u xorPorta132|y~combout $end
+$var wire 1 v xorRemainder5|y~combout $end
+$var wire 1 w xorRemainder6|y~combout $end
+$var wire 1 x xorRemainder7|y~combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b1010101010101010 !
+b1010101001010101 !
 09
-08
+18
 17
 16
 05
 14
-03
+13
 12
-01
-10
-0/
-1.
-0-
-1,
-0+
-1*
+11
+00
+1/
+0.
+1-
+0,
+1+
+0*
 0)
 1(
 0'
@@ -140,21 +140,21 @@ x<
 1>
 1?
 0@
-0A
+1A
 1B
 1C
 0D
 1E
-0F
+1F
 1G
-0H
-1I
-0J
-1K
-0L
-1M
-0N
-1O
+1H
+0I
+1J
+0K
+1L
+0M
+1N
+0O
 0P
 1Q
 0R
@@ -163,29 +163,29 @@ x<
 1U
 0V
 1W
-1X
+0X
 1Y
 0Z
-0[
-1\
-1]
+1[
+0\
+0]
 0^
 0_
-1`
-0a
+0`
+1a
 1b
-0c
+1c
 1d
 0e
 0f
 1g
 1h
-0i
+1i
 0j
 1k
-0l
-0m
-0n
+1l
+1m
+1n
 0o
 1p
 1q
@@ -194,7 +194,62 @@ x<
 0t
 0u
 1v
-0w
+1w
 1x
 $end
+#470000
+b1010101011010101 !
+b1010101010010101 !
+b1010101010110101 !
+b1010101010100101 !
+b1010101010101101 !
+b1010101010101001 !
+b1010101010101011 !
+b1010101010101010 !
+0c
+1f
+0m
+1\
+0k
+1]
+0i
+1_
+1O
+0N
+1M
+0L
+1K
+0J
+1I
+0H
+0d
+0p
+0h
+01
+10
+0/
+1.
+0-
+1,
+0+
+1*
+1t
+1e
+1@
+1D
+1j
+15
+19
+0e
+0t
+0D
+0@
+09
+05
+0w
+0l
+0A
+0F
+03
+08
 #1000000

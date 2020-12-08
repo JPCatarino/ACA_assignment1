@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/04/2020 17:48:56"
+// Generated on "12/08/2020 16:30:57"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          CRC8_Encoder
 // 
@@ -87,42 +87,50 @@ end
 // dIn[ 7 ]
 initial
 begin
-	dIn[7] = 1'b1;
+	dIn[7] = 1'b0;
+	dIn[7] = #470000 1'b1;
 end 
 // dIn[ 6 ]
 initial
 begin
-	dIn[6] = 1'b0;
+	dIn[6] = 1'b1;
+	dIn[6] = #470000 1'b0;
 end 
 // dIn[ 5 ]
 initial
 begin
-	dIn[5] = 1'b1;
+	dIn[5] = 1'b0;
+	dIn[5] = #470000 1'b1;
 end 
 // dIn[ 4 ]
 initial
 begin
-	dIn[4] = 1'b0;
+	dIn[4] = 1'b1;
+	dIn[4] = #470000 1'b0;
 end 
 // dIn[ 3 ]
 initial
 begin
-	dIn[3] = 1'b1;
+	dIn[3] = 1'b0;
+	dIn[3] = #470000 1'b1;
 end 
 // dIn[ 2 ]
 initial
 begin
-	dIn[2] = 1'b0;
+	dIn[2] = 1'b1;
+	dIn[2] = #470000 1'b0;
 end 
 // dIn[ 1 ]
 initial
 begin
-	dIn[1] = 1'b1;
+	dIn[1] = 1'b0;
+	dIn[1] = #470000 1'b1;
 end 
 // dIn[ 0 ]
 initial
 begin
-	dIn[0] = 1'b0;
+	dIn[0] = 1'b1;
+	dIn[0] = #470000 1'b0;
 end 
 endmodule
 
