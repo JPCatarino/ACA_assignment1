@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/Media Markt/Desktop/ACA_assignment1/version2/CRC8_Encoder/simulation/qsim
 vCRC8_Encoder
-Z1 !s110 1607104146
+Z1 !s110 1607445064
 !i10b 1
-!s100 FQ2Xo<3lXS2?LJ3iV[5a_0
-I]enUMC16jW>`mgz_I51dD3
+!s100 cJ2SEMFXfW6jmmcU]>W5z0
+IDRPUYiOEIS];NcQ:bJo8R3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1607104142
+w1607445063
 8CRC8_Encoder.vo
 FCRC8_Encoder.vo
 L0 32
@@ -23,7 +23,7 @@ Z3 OV;L;10.4b;61
 r1
 !s85 0
 31
-Z4 !s108 1607104146.000000
+Z4 !s108 1607445064.000000
 !s107 CRC8_Encoder.vo|
 !s90 -work|work|CRC8_Encoder.vo|
 !i113 1
@@ -32,11 +32,11 @@ n@c@r@c8_@encoder
 vCRC8_Encoder_vlg_vec_tst
 R1
 !i10b 1
-!s100 NjW9JXQThhahi7ek_7LKY0
-I^WD?Y6K8EcjCn>[XOWGlF1
+!s100 nzYVBNc`8OzH<eZhhdTP10
+ITTP9J7POH?zSm6I_g5>`61
 R2
 R0
-w1607104136
+w1607445057
 8Waveform1.vwf.vt
 FWaveform1.vwf.vt
 L0 30
