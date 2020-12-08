@@ -26,7 +26,15 @@ architecture Structural of CRC8_Checker is
 	signal iNRst, iNset, iNclk, s_in	: STD_LOGIC;
 	signal stat		: STD_LOGIC_VECTOR (4 DOWNTO 0);
 	signal s_dOut 	: STD_LOGIC_VECTOR(7 downto 0);
-
+	signal s_error : STD_LOGIC;
+	
+	
+	component gateOr8
+	port(
+		x0, x1, x2, x3, x4, x5, x6, x7: in std_logic;
+		y : out std_logic
+	);
+	end component;
 
 	component BinCounter5
 	port(
@@ -62,6 +70,7 @@ begin
 	bc: 	 BinCounter5 PORT MAP (clk, iNRst, stat);
 	cUnit: Control_Unit PORT MAP (nGRst, clk, stat, iNRst, iNset, iNclk);	
 	LFSR:  CRC8_LFSR PORT MAP (clk, iNRst, dIn, s_dOut); 
-	FF0:	 flipFlopDPET PORT MAP (iNclk, s_dOut(0) or s_dOut(1) or s_dOut(2) or s_dOut(3) or s_dOut(4) or s_dOut(5) or s_dOut(6) or s_dOut(7), iNset, '1', error); 	
+	OR80:	 gateOr8 PORT MAP(s_dOut(0), s_dOut(1), s_dOut(2), s_dOut(3), s_dOut(4), s_dOut(5), s_dOut(6), s_dOut(7), s_error);
+	FF0:	 flipFlopDPET PORT MAP (iNclk, s_error, iNset, '1', error); 	
 end Structural;
 

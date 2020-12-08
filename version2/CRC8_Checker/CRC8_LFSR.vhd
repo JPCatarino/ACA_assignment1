@@ -14,8 +14,8 @@ entity CRC8_LFSR is
 end CRC8_LFSR;
 
 architecture Structural of CRC8_LFSR is
-	signal chainXor : std_logic := '0';
-	signal dff0_out, dff1_out, dff2_out, dff3_out, dff4_out, dff5_out, dff6_out, dff7_out : std_logic := '0';
+	signal chainXor : std_logic;
+	signal dff0_out, dff1_out, dff2_out, dff3_out, dff4_out, dff5_out, dff6_out, dff7_out : std_logic;
 	component DFlipFlop 
    port(
       clk :in std_logic; 
@@ -35,14 +35,7 @@ begin
 	dff1: DFlipFlop PORT MAP (clk, rst, dff2_out, dff1_out);
 	dff0: DFlipFlop PORT MAP (clk, rst, dff1_out, dff0_out);
 	
-	--process(clk, rst)
-	--begin
-		--if(rst = '0') then
-			--chainXor <= '0';
-		--elsif (rising_edge(clk)) then
-			chainXor <= dff0_out xor dIn;
-		--end if;
-	--end process;
+	chainXor <= dff0_out xor dIn;
 	
 	dOut <= dff0_out & dff1_out & dff2_out & dff3_out & dff4_out & dff5_out & dff6_out & dff7_out;
 end Structural;
