@@ -7,11 +7,11 @@ use CRC8_LFSR.all;
 library flipFlopDPET;
 use flipFlopDPET.all;
 
-library BinCounter5;
-use BinCounter5.all;
-
 library Control_Unit;
 use Control_Unit.all;
+
+library binCounter_5bit;
+use binCounter_5bit.all;
 
 entity CRC8_Checker is
 	port(
@@ -35,11 +35,11 @@ architecture Structural of CRC8_Checker is
 		y : out std_logic
 	);
 	end component;
-
-	component BinCounter5
-	port(
-		clk, rst : in std_logic;
-		cOut		: out std_logic_vector(4 downto 0)
+	
+	component binCounter_5bit
+	PORT (nRst: IN STD_LOGIC;
+        clk:  IN STD_LOGIC;
+        c:    OUT STD_LOGIC_VECTOR (4 DOWNTO 0)
 	);
 	end component;
 	
@@ -67,7 +67,7 @@ architecture Structural of CRC8_Checker is
 	);
 	end component;
 begin
-	bc: 	 BinCounter5 PORT MAP (clk, iNRst, stat);
+	bc: 	 binCounter_5bit PORT MAP (iNRst, clk, stat);
 	cUnit: Control_Unit PORT MAP (nGRst, clk, stat, iNRst, iNset, iNclk);	
 	LFSR:  CRC8_LFSR PORT MAP (clk, iNRst, dIn, s_dOut); 
 	OR80:	 gateOr8 PORT MAP(s_dOut(0), s_dOut(1), s_dOut(2), s_dOut(3), s_dOut(4), s_dOut(5), s_dOut(6), s_dOut(7), s_error);

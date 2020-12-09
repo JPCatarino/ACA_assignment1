@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/jorpc/projectos/ACA_assignment1/version2/CRC8_Checker/simulation/qsim
 Ecrc8_checker
-Z1 w1607444652
+Z1 w1607480202
 Z2 DPx9 cycloneiv 19 cycloneiv_atom_pack 0 22 ^M[R>L941CzW^5^z4gfb52
 Z3 DPx9 cycloneiv 20 cycloneiv_components 0 22 A=5Z=j^V:4BYGPNKNFE9o0
 Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
@@ -19,7 +19,7 @@ Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z9 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
-!i122 62
+!i122 72
 R0
 Z10 8CRC8_Checker.vho
 Z11 FCRC8_Checker.vho
@@ -29,9 +29,9 @@ VW`@G2dfH5I8m23VE<M7oR3
 !s100 =bUAY61Q7Eaj0]VWmlej`3
 Z12 OV;C;2020.1;71
 32
-Z13 !s110 1607444653
+Z13 !s110 1607480203
 !i10b 1
-Z14 !s108 1607444653.000000
+Z14 !s108 1607480203.000000
 Z15 !s90 -work|work|CRC8_Checker.vho|
 Z16 !s107 CRC8_Checker.vho|
 !i113 1
@@ -47,11 +47,11 @@ R7
 R8
 R9
 DEx4 work 12 crc8_checker 0 22 W`@G2dfH5I8m23VE<M7oR3
-!i122 62
-l160
-L96 678
-VI?1VVXAO6[DPHM>Gfk9jF0
-!s100 jOVGO86`_[nhTcPbU3YU61
+!i122 72
+l163
+L96 705
+VoNQ_6@`NN7Q9TQec5?nRQ2
+!s100 k7iBW[JzZP19]CizZ?QID0
 R12
 32
 R13
@@ -63,13 +63,13 @@ R16
 R17
 R18
 Ecrc8_checker_vhd_vec_tst
-R1
+Z19 w1607480201
 R7
 R8
-!i122 63
+!i122 73
 R0
-Z19 8Waveform.vwf.vht
-Z20 FWaveform.vwf.vht
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
 l0
 L32 1
 VZ^Hn96bWCgkF6F71QlGSY3
@@ -79,18 +79,18 @@ R12
 R13
 !i10b 1
 R14
-Z21 !s90 -work|work|Waveform.vwf.vht|
-Z22 !s107 Waveform.vwf.vht|
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
 !i113 1
 R17
 R18
 Acrc8_checker_arch
 R7
 R8
-Z23 DEx4 work 24 crc8_checker_vhd_vec_tst 0 22 Z^Hn96bWCgkF6F71QlGSY3
-!i122 63
+Z24 DEx4 work 24 crc8_checker_vhd_vec_tst 0 22 Z^Hn96bWCgkF6F71QlGSY3
+!i122 73
 l49
-Z24 L34 140
+L34 140
 Vde2Xg[W:FZiCH_?<I;9fn2
 !s100 h9:?ZX1GB`LVF<63WjFT^1
 R12
@@ -98,8 +98,8 @@ R12
 R13
 !i10b 1
 R14
-R21
 R22
+R23
 !i113 1
 R17
 R18
@@ -111,7 +111,7 @@ R6
 R7
 R8
 R3
-!i122 62
+!i122 72
 R0
 R10
 R11
@@ -137,7 +137,7 @@ R7
 R8
 R3
 DEx4 work 10 hard_block 0 22 5mcF]JUg7TS^l0EMa_h4A1
-!i122 62
+!i122 72
 l65
 L51 20
 VMkbPfL8S?h^i>Mg3GSGD`1
