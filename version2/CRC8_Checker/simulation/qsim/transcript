@@ -1,7 +1,7 @@
 # do CRC8_Checker.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:16:43 on Dec 09,2020
+# Start time: 02:25:18 on Dec 09,2020
 # vcom -work work CRC8_Checker.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -16,20 +16,20 @@
 # -- Loading package altera_primitives_components
 # -- Compiling entity CRC8_Checker
 # -- Compiling architecture structure of CRC8_Checker
-# End time: 02:16:43 on Dec 09,2020, Elapsed time: 0:00:00
+# End time: 02:25:18 on Dec 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:16:43 on Dec 09,2020
+# Start time: 02:25:18 on Dec 09,2020
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity CRC8_Checker_vhd_vec_tst
 # -- Compiling architecture CRC8_Checker_arch of CRC8_Checker_vhd_vec_tst
-# End time: 02:16:43 on Dec 09,2020, Elapsed time: 0:00:00
+# End time: 02:25:18 on Dec 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.CRC8_Checker_vhd_vec_tst 
-# Start time: 02:16:43 on Dec 09,2020
+# Start time: 02:25:18 on Dec 09,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -50,5 +50,5 @@
 # Loading cycloneiv.cycloneiv_clkctrl(vital_clkctrl)
 # Loading cycloneiv.cycloneiv_ena_reg(behave)
 # after#35
-# End time: 02:16:43 on Dec 09,2020, Elapsed time: 0:00:00
+# End time: 02:25:19 on Dec 09,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

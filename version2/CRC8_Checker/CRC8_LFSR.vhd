@@ -17,7 +17,7 @@ entity CRC8_LFSR is
 end CRC8_LFSR;
 
 architecture Structural of CRC8_LFSR is
-	signal X07, X1, X2, X3, X5 : std_logic;
+	signal X08, X1, X2, X3, X5 : std_logic;
 	signal dff0_out, dff1_out, dff2_out, dff3_out, dff4_out, dff5_out, dff6_out, dff7_out : std_logic;
 	
 	COMPONENT gateXor2
@@ -35,13 +35,13 @@ architecture Structural of CRC8_LFSR is
 	end component;
 begin
 
-	xor0: gateXor2 PORT MAP (dff0_out, dIn, X07);
-	xor1: gateXor2 PORT MAP (X07, dff7_out, X1);
-	xor2: gateXor2 PORT MAP (X07, dff6_out, X2);
-	xor3: gateXor2 PORT MAP (X07, dff5_out, X3);
-	xor4: gateXor2 PORT MAP (X07, dff3_out, X5);
+	xor0: gateXor2 PORT MAP (dff0_out, dIn, X08);
+	xor1: gateXor2 PORT MAP (X08, dff7_out, X1);
+	xor2: gateXor2 PORT MAP (X08, dff6_out, X2);
+	xor3: gateXor2 PORT MAP (X08, dff5_out, X3);
+	xor4: gateXor2 PORT MAP (X08, dff3_out, X5);
 	
-	dff7: DFlipFlop PORT MAP (clk, rst, X07, dff7_out);
+	dff7: DFlipFlop PORT MAP (clk, rst, X08, dff7_out);
 	dff6: DFlipFlop PORT MAP (clk, rst, X1, dff6_out);
 	dff5: DFlipFlop PORT MAP (clk, rst, X2, dff5_out);
 	dff4: DFlipFlop PORT MAP (clk, rst, X3, dff4_out);

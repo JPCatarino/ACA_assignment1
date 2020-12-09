@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Dec 09 02:16:41 2020
+    Info: Processing started: Wed Dec 09 02:25:16 2020
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off CRC8_Checker -c CRC8_Checker --vector_source=C:/Users/jorpc/projectos/ACA_assignment1/version2/CRC8_Checker/Waveform.vwf --testbench_file=C:/Users/jorpc/projectos/ACA_assignment1/version2/CRC8_Checker/simulation/qsim/Waveform.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -53,14 +53,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Dec 09 02:16:41 2020
+    Info: Processing started: Wed Dec 09 02:25:17 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/jorpc/projectos/ACA_assignment1/version2/CRC8_Checker/simulation/qsim/ CRC8_Checker -c CRC8_Checker
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file CRC8_Checker.vho in folder "C:/Users/jorpc/projectos/ACA_assignment1/version2/CRC8_Checker/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4709 megabytes
-    Info: Processing ended: Wed Dec 09 02:16:42 2020
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Wed Dec 09 02:25:17 2020
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
@@ -79,12 +79,13 @@ Reading pref.tcl
 
 # 2020.1
 
-# do CRC8_Checker.do
 
+# do CRC8_Checker.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:16:43 on Dec 09,2020
+# Start time: 02:25:18 on Dec 09,2020
 # vcom -work work CRC8_Checker.vho 
+
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -94,27 +95,26 @@ Reading pref.tcl
 # -- Loading package cycloneiv_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
-
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
 # -- Compiling entity CRC8_Checker
 # -- Compiling architecture structure of CRC8_Checker
-# End time: 02:16:43 on Dec 09,2020, Elapsed time: 0:00:00
+# End time: 02:25:18 on Dec 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:16:43 on Dec 09,2020
+# Start time: 02:25:18 on Dec 09,2020
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
+
 # -- Compiling entity CRC8_Checker_vhd_vec_tst
 # -- Compiling architecture CRC8_Checker_arch of CRC8_Checker_vhd_vec_tst
-# End time: 02:16:43 on Dec 09,2020, Elapsed time: 0:00:00
+# End time: 02:25:18 on Dec 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.CRC8_Checker_vhd_vec_tst 
-# Start time: 02:16:43 on Dec 09,2020
+# Start time: 02:25:18 on Dec 09,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -136,7 +136,7 @@ Reading pref.tcl
 # Loading cycloneiv.cycloneiv_ena_reg(behave)
 # after#35
 
-# End time: 02:16:43 on Dec 09,2020, Elapsed time: 0:00:00
+# End time: 02:25:19 on Dec 09,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -149,7 +149,7 @@ Reading C:/Users/jorpc/projectos/ACA_assignment1/version2/CRC8_Checker/simulatio
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/jorpc/projectos/ACA_assignment1/version2/CRC8_Checker/simulation/qsim/CRC8_Checker_20201209021644.sim.vwf
+Writing the resulting VWF to C:/Users/jorpc/projectos/ACA_assignment1/version2/CRC8_Checker/simulation/qsim/CRC8_Checker_20201209022519.sim.vwf
 
 Finished VCD to VWF conversion.
 

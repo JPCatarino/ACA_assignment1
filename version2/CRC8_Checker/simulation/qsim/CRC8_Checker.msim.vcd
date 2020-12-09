@@ -3,7 +3,7 @@ $comment
 		vcd file CRC8_Checker.msim.vcd -direction
 $end
 $date
-	Wed Dec 09 02:16:43 2020
+	Wed Dec 09 02:25:19 2020
 $end
 $version
 	ModelSim Version 2020.1
