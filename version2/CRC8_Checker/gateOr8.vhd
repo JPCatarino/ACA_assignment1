@@ -10,7 +10,7 @@ end gateOr8;
 
 ARCHITECTURE logicGate of gateOr8 is
 begin
-	y <= x0 xor x1 xor x2 xor x3 xor x4 xor x5 xor x6 xor x7;
+	y <= x0 or x1 or x2 or x3 or x4 or x5 or x6 or x7;
 end logicGate;
 
 
